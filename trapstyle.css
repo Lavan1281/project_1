@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(144, 144, 144, 0.6);
+    width: auto;
+}
+.navbar{
+    flex: 1;
+    text-align: right;   
+}
+.navbar ul{
+    display:inline-block;
+    list-style: none;
+}
+.navbar ul li{
+    display:inline-block;
+    margin-right: 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar ul li a:hover{
+    color:rgb(6, 43, 88);
+    text-decoration:underline;
+   
+}
+.img1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9),transparent),url("https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1784&q=80");
+    width: 100% ;
+    height: 120vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+
+}
+.text-box{
+    color: #fff;
+    position:absolute;
+    bottom: 38%;
+}
+.text-box p{
+    font-size: 25px;
+    font-weight: 400;
+
+}
+.text-box h1{
+    font-size: 90px;
+    line-height: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background-image: url("images__1_-removebg-preview.png");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 50s linear infinite;
+
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 0;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    gap: 20px;
+}
+.content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+    background: #a7a4a4;   
+}
+.content:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+    background-color: #7497c0;
+}
+.T-shirt{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.detail{
+    text-align: center;
+    color:#081c24;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+h6{
+    font-size: 16px;
+    text-align: center;
+    color:#222f3e;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.gallery button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    background-color:#000;
+    color:white;
+    width: 50%;
+    cursor:default;
+    font-size: 14px;
+    border-radius: 10px;
+} 
+.gallery  button:hover{
+    color:#000;
+    background-color: white;
+    border-radius: 10px;
+}
+.tshirts{
+    position: relative;
+}
+.tshirts img{
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.tshirts .text2{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: rgb(255, 255, 255);
+    padding: 20px; 
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+
+
+
+.content-1{
+    display: grid;
+    padding: 5rem;
+    grid-template-columns: 300px 1fr;
+    gap: 10rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    line-height: 28px;
+    word-spacing: 5px;
+ 
+}
+.content-1 span{
+    font-size: 28px;
+    font-weight: bold;
+}
+.content-1 .img2{
+    max-width: 100%;
+    height: auto;
+}
+
+

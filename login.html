@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <style>
+          body {
+            font-family: 'Poppins', sans-serif;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.9),transparent),url("https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1784&q=80");
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+          }
+          .login-container {
+            background-color: #9b9a9a;
+           opacity: 0.9;
+            border-radius: 5px;
+            box-shadow: 0px 10px 20px rgba(30, 29, 29, 15);
+            padding: 40px;
+            width: 380px;
+            text-align: center;
+          }
+          .login-container h2 {
+            margin-bottom: 20px;
+          }
+          .input-group {
+            margin-bottom: 20px;
+          }
+          .input-group label {
+            display: block;
+            margin-bottom: 5px;
+          }
+          .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+          }
+          .login-btn {
+            background-color: #022852;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+          }
+          .social-login {
+            margin-top: 20px;
+          }
+          .social-login button {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 0 5px;
+          }
+          .facebook-btn {
+            background-color: #1877f2;
+            color: #fff;
+          }
+          .google-btn {
+            background-color: #db4a39;
+            color: #fff;
+          }
+        </style>
+        <script>
+           
+              function validateForm() {
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+        
+                if (username === "" || password === "") {
+                  alert("Username and password are required!");
+                  return false;
+                }
+        
+               
+        
+                return true;
+              }
+            </script>
+        
+        </head>
+        <body>
+          <div class="login-container">
+            <h2>Login</h2>
+            <form>
+              <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+              <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="input-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+              </div>
+              <button class="login-btn" type="submit">Login</button>
+            </form>
+            <div class="social-login">
+              <button class="facebook-btn">Login with Facebook</button>
+              <button class="google-btn">Login with Google</button>
+            </div>
+          </div>
+   
+</body>
+</html>
